@@ -1,0 +1,215 @@
+/* Базовые переменные и сброс */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка и Навигация */
+.site-header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+/* Бургер-меню (Mobile First) */
+.burger-menu {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.main-nav {
+    display: none; /* Скрыто на мобильных по умолчанию */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: 10;
+}
+
+.main-nav.active {
+    display: block;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    background-color: var(--accent-color);
+}
+
+/* Раскладка (Layout) */
+.layout-wrapper {
+    display: flex;
+    flex-direction: column; /* На мобильных друг под другом */
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Сайдбар */
+.sidebar .widget {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.subscribe-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.subscribe-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Таблицы и Видео */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td { border: 1px solid #ddd; }
+th, td { padding: 12px; text-align: left; }
+th { background-color: #f2f2f2; }
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Футер */
+.site-footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Брейкпоинт: Планшеты (≥ 768px) */
+@media (min-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+    
+    .main-nav {
+        display: block;
+        position: static;
+        width: auto;
+    }
+    
+    .main-nav ul {
+        display: flex;
+    }
+    
+    .main-nav ul li a {
+        border: none;
+        padding: 10px 15px;
+    }
+    
+    .layout-wrapper {
+        flex-direction: row; /* Сайдбар сбоку */
+    }
+    
+    .main-content {
+        flex: 2;
+    }
+    
+    .sidebar {
+        flex: 1;
+    }
+}
+
+/* Брейкпоинт: Десктопы (≥ 992px) */
+@media (min-width: 992px) {
+    .main-content {
+        flex: 3;
+    }
+    .layout-wrapper {
+        gap: 50px;
+    }
+}

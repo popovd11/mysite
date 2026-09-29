@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Системы управления контентом (CMS) | Главная</title>
+    
+    <!-- Подключение фреймворка Pylon -->
+    <link href="https://cdn.jsdelivr.net/npm/pylon.style@latest/css/pylon.css" rel="stylesheet">
+    <!-- Твои кастомные стили -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">CMS <span>Guide</span></a>
+            </div>
+            
+            <!-- Бургер-меню для мобилок -->
+            <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+
+            <!-- Основная навигация -->
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="wordpress.html">WordPress</a></li>
+                    <li><a href="joomla.html">Joomla</a></li>
+                    <li><a href="drupal.html">Drupal</a></li>
+                    <li><a href="comparison.html">Сравнение</a></li>
+                    <li><a href="video.html">Видео</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент + Сайдбар -->
+    <div class="container layout-wrapper">
+        <main class="main-content">
+            <h1>Что такое CMS?</h1>
+            <p><strong>Система управления контентом (CMS)</strong> — это программное обеспечение, которое помогает пользователям создавать, управлять и изменять контент на веб-сайте без необходимости глубоких технических знаний программирования.</p>
+            
+            <!-- Пример адаптивного изображения -->
+            <picture>
+                <img src="images/cms-intro.jpg" 
+                     srcset="images/cms-intro-400.jpg 400w, images/cms-intro-800.jpg 800w" 
+                     sizes="(max-width: 768px) 100vw, 50vw" 
+                     alt="Иллюстрация панели управления CMS" 
+                     title="Панель администратора" 
+                     class="responsive-img">
+            </picture>
+
+            <h2>Зачем нужны CMS?</h2>
+            <ul>
+                <li>Упрощенное создание веб-страниц.</li>
+                <li>Многопользовательский доступ и разделение прав.</li>
+                <li>Готовые шаблоны дизайна и плагины.</li>
+                <li>SEO-оптимизация «из коробки».</li>
+            </ul>
+        </main>
+
+        <aside class="sidebar">
+            <section class="widget">
+                <h3>Популярные CMS</h3>
+                <ol>
+                    <li><a href="wordpress.html">WordPress</a> (Около 43% рынка)</li>
+                    <li><a href="joomla.html">Joomla</a></li>
+                    <li><a href="drupal.html">Drupal</a></li>
+                </ol>
+            </section>
+            
+            <section class="widget">
+                <h3>Подписка на статьи</h3>
+                <form action="#" class="subscribe-form">
+                    <input type="email" placeholder="Ваш E-mail" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </section>
+        </aside>
+    </div>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <p>&copy; 2024 Попов Дмитрий Эдуардович. Учебный проект.</p>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">О проекте</a>
+                <a href="contact.html">Связаться с нами</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS для интерактива -->
+    <script src="js/main.js"></script>
+</body>
+</html>
