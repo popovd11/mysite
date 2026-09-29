@@ -1,7 +1,7 @@
 # Учебный проект: Разработка сайта с использованием CSS-фреймворка
 
 **Ссылка на работающий сайт (Live):** [https://popovd11.github.io/mysite/](https://popovd11.github.io/mysite/)  
-**Ссылка на репозиторий GitHub:** [https://popovd11.github.io/mysite/](https://popovd11.github.io/mysite/)
+**Ссылка на репозиторий GitHub:** [https://github.com/popovd11/mysite](https://github.com/popovd11/mysite)
 
 ### Данные студента
 * **ФИО:** Попов Дмитрий Эдуардович

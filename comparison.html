@@ -1,37 +1,117 @@
-<main class="main-content">
-    <h1>Сравнение популярных CMS</h1>
-    <p>Ниже представлена таблица сравнения трех ведущих систем управления контентом.</p>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение CMS | Системы управления контентом</title>
     
-    <div class="table-responsive">
-        <table>
-            <thead>
-                <tr>
-                    <th>Критерий</th>
-                    <th>WordPress</th>
-                    <th>Joomla</th>
-                    <th>Drupal</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Сложность освоения</strong></td>
-                    <td>Легко</td>
-                    <td>Средне</td>
-                    <td>Сложно</td>
-                </tr>
-                <tr>
-                    <td><strong>Гибкость</strong></td>
-                    <td>Средняя (зависит от плагинов)</td>
-                    <td>Высокая</td>
-                    <td>Очень высокая</td>
-                </tr>
-                <tr>
-                    <td><strong>Безопасность</strong></td>
-                    <td>Требует настройки</td>
-                    <td>Хорошая</td>
-                    <td>Отличная</td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- Подключение фреймворка Pylon -->
+    <link href="https://cdn.jsdelivr.net/npm/pylon.style@latest/css/pylon.css" rel="stylesheet">
+    <!-- Твои кастомные стили -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">CMS <span>Guide</span></a>
+            </div>
+            
+            <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="wordpress.html">WordPress</a></li>
+                    <li><a href="joomla.html">Joomla</a></li>
+                    <li><a href="drupal.html">Drupal</a></li>
+                    <li><a href="comparison.html" class="active">Сравнение</a></li>
+                    <li><a href="video.html">Видео</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент + Сайдбар -->
+    <div class="container layout-wrapper">
+        <main class="main-content">
+            <h1>Сравнение популярных CMS</h1>
+            <p>Ниже представлена таблица сравнения трех ведущих систем управления контентом по ключевым критериям.</p>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Критерий</th>
+                            <th>WordPress</th>
+                            <th>Joomla</th>
+                            <th>Drupal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Сложность освоения</strong></td>
+                            <td>Низкая (легко новичкам)</td>
+                            <td>Средняя</td>
+                            <td>Высокая (требует навыков)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Гибкость и расширяемость</strong></td>
+                            <td>Средняя (через плагины)</td>
+                            <td>Высокая</td>
+                            <td>Очень высокая</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Безопасность</strong></td>
+                            <td>Требует обновлений</td>
+                            <td>Хорошая защита</td>
+                            <td>Отличная (Enterprise)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Производительность</strong></td>
+                            <td>Зависит от плагинов</td>
+                            <td>Средняя</td>
+                            <td>Высокая при настройке</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Тип проектов</strong></td>
+                            <td>Блоги, визитки, магазины</td>
+                            <td>Порталы, сообщества</td>
+                            <td>Крупные корпоративные сайты</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <section class="widget">
+                <h3>Популярные CMS</h3>
+                <ol>
+                    <li><a href="wordpress.html">WordPress</a></li>
+                    <li><a href="joomla.html">Joomla</a></li>
+                    <li><a href="drupal.html">Drupal</a></li>
+                </ol>
+            </section>
+        </aside>
     </div>
-</main>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Попов Дмитрий Эдуардович. Учебный проект.</p>
+            <div class="footer-links">
+                <a href="about.html">О проекте</a> | 
+                <a href="contact.html">Контакты</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

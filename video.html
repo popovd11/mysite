@@ -1,9 +1,75 @@
-<main class="main-content">
-    <h1>Видео: Как выбрать CMS?</h1>
-    <p>Посмотрите подробный видеообзор, чтобы понять, какая платформа подойдет для вашего проекта.</p>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеообзор CMS | Системы управления контентом</title>
     
-    <div class="video-container">
-        <!-- Пример интеграции через iframe (можно заменить на RuTube/VK) -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Видео плеер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Подключение фреймворка Pylon -->
+    <link href="https://cdn.jsdelivr.net/npm/pylon.style@latest/css/pylon.css" rel="stylesheet">
+    <!-- Твои кастомные стили -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">CMS <span>Guide</span></a>
+            </div>
+            
+            <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="wordpress.html">WordPress</a></li>
+                    <li><a href="joomla.html">Joomla</a></li>
+                    <li><a href="drupal.html">Drupal</a></li>
+                    <li><a href="comparison.html">Сравнение</a></li>
+                    <li><a href="video.html" class="active">Видео</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент + Сайдбар -->
+    <div class="container layout-wrapper">
+        <main class="main-content">
+            <h1>Видео: Как выбрать CMS для проекта?</h1>
+            <p>Посмотрите подробный видеообзор, чтобы понять, какая система управления контентом лучше всего подойдет под ваши задачи.</p>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://vkvideo.ru/video-52790652_456239027" title="Видео плеер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <section class="widget">
+                <h3>Подписка на статьи</h3>
+                <form action="#" class="subscribe-form">
+                    <input type="email" placeholder="Ваш E-mail" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </section>
+        </aside>
     </div>
-</main>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Попов Дмитрий Эдуардович. Учебный проект.</p>
+            <div class="footer-links">
+                <a href="about.html">О проекте</a> | 
+                <a href="contact.html">Контакты</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
