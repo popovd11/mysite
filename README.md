@@ -1,11 +1,11 @@
 # Учебный проект: Разработка сайта с использованием CSS-фреймворка
 
-**Ссылка на работающий сайт (Live):** [https://твой-логин.github.io/cms-project/](https://твой-логин.github.io/cms-project/)  
-**Ссылка на репозиторий GitHub:** [https://github.com/твой-логин/cms-project](https://github.com/твой-логин/cms-project)
+**Ссылка на работающий сайт (Live):** [https://popovd11.github.io/mysite/](https://popovd11.github.io/mysite/)  
+**Ссылка на репозиторий GitHub:** [https://popovd11.github.io/mysite/](https://popovd11.github.io/mysite/)
 
 ### Данные студента
 * **ФИО:** Попов Дмитрий Эдуардович
-* **Группа:** [УКАЖИ СВОЮ ГРУППУ]
+* **Группа:** 335
 * **Тема проекта:** 6. Системы управления контентом (CMS) (WordPress, Joomla, Drupal)
 * **Использованный CSS-фреймворк:** 37. Pylon CSS
 
